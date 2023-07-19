@@ -15,7 +15,7 @@ import InfoCards from "./info-cards.vue";
     </nav>
   </header>
   <section class="hero">
-    <img src="hero.svg" alt="hero" class="hero-img" />
+    <img src="/hero.svg" alt="hero" class="hero-img" />
 
     <div class="hero-container">
       <div class="hero-title">

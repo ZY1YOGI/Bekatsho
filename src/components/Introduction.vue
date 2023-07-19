@@ -1,7 +1,7 @@
 <template>
   <h1 class="title">INTRODUCTION</h1>
   <h2 class="sub-title">The Concert Studio</h2>
-  <img class="img" src="introduction.svg" alt="introduction" />
+  <img class="img" src="/introduction.svg" alt="introduction" />
   <p class="paragraph">
     Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis
     rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum.

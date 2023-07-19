@@ -3,7 +3,7 @@
     <div class="items">
 
       <div class="item item-phone">
-        <img src="icon/phone.svg" alt="location" />
+        <img src="/icon/phone.svg" alt="location" />
         <div>
           <h1>Give Us a Call</h1>
           <h2>(+20) 010 0000 00 00</h2>
