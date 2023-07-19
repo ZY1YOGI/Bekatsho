@@ -1,12 +1,7 @@
-<script setup lang="ts">
-function slide(e: string) {
-  console.log(e);
-}
-</script>
-
 <template>
   <div class="info-container">
     <div class="items">
+
       <div class="item item-phone">
         <img src="icon/phone.svg" alt="location" />
         <div>
@@ -15,7 +10,7 @@ function slide(e: string) {
         </div>
       </div>
 
-      <div class="item item-location">
+      <!-- <div class="item item-location">
         <img src="icon/location.svg" alt="location" />
         <div>
           <h1>Giza, engineers</h1>
@@ -29,10 +24,10 @@ function slide(e: string) {
           <h1>Send Us a Message</h1>
           <h2>Bekatsho@gmail.com</h2>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <button class="prev" @click="slide('prev')">
+    <button class="prev">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -49,7 +44,7 @@ function slide(e: string) {
         />
       </svg>
     </button>
-    <button class="next" @click="slide('next')">
+    <button class="next">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -69,6 +64,10 @@ function slide(e: string) {
   </div>
 </template>
 
+<script setup lang="ts">
+
+</script>
+
 <style scoped>
 .info-container {
   @apply flex items-center justify-center rounded-full mt-12 mx-3 text-white relative py-3;
@@ -77,34 +76,18 @@ function slide(e: string) {
 }
 
 .prev {
-  @apply absolute left-2;
+  @apply absolute left-2 z-50;
 }
 
 .next {
-  @apply absolute right-2;
-}
-
-.items {
-  @apply overflow-x-scroll flex items-center;
+  @apply absolute right-2 z-50;
 }
 
 .item {
-  @apply items-center whitespace-nowrap hidden justify-between;
+  @apply flex items-center whitespace-nowrap justify-center space-x-1.5;
 }
 
 .item h1 {
   @apply font-bold;
-}
-
-.item-phone {
-  @apply flex space-x-5;
-}
-
-.item-location {
-  @apply space-x-3;
-}
-
-.item-mail {
-  @apply space-x-3;
 }
 </style>
